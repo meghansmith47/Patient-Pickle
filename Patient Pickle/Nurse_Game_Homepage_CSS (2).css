@@ -1,0 +1,342 @@
+/* css Zen Garden default style v1.02 */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+
+/* This file based on 'Tranquille' by Dave Shea */
+/* You may use this file as a foundation for any new work, but you may find it easier to start from scratch. */
+/* Not all elements are defined in this file, so you'll most likely want to refer to the xhtml as well. */
+
+/* Your images should be linked as if the CSS file sits in the same folder as the images. ie. no paths. */
+
+
+/* basic elements */
+html {
+	margin: 0;
+	padding: 0;
+	}
+body { 
+	font-family:georgia, sans-serif;
+	line-height: 1.88889;
+	color: #555753; 
+	margin: 0; 
+	padding: 0;
+	}
+p { 
+	margin-top: 0; 
+	float:center;
+	text-align: justify;
+	background-color:
+	}
+		
+h3 { 
+	font-family:georgia, sans-serif;
+	font-size:150%;
+	font-style:italic;
+	background-color: #6D6093;	
+	letter-spacing: 1px; 
+	margin-bottom: 0; 
+	margin-left:3%;
+	margin-right:3%;
+	border-radius:2.5%;
+	float:center;
+	text-align:center;
+	}
+h2 { 
+	font-family:georgia, sans-serif;
+	font-size:200%;
+	background-color:#392C5D;
+	color: #EBE6F8;	
+	letter-spacing: 1px; 
+	margin-bottom: 0; 
+	margin-left:37.5%;
+	margin-right:37.5%;
+	border-radius:3%;
+	float:center;
+	text-align:center;
+	}
+a:link { 
+	font-weight: bold; 
+	text-decoration: none; 
+	color: #BDB3C9;
+	}
+a:visited { 
+	font-weight: bold; 
+	text-decoration: none; 
+	color: #D4CDDC;
+	}
+a:hover, a:focus, a:active { 
+	text-decoration: underline; 
+	color: #9685BA;
+	}
+abbr {
+	border-bottom: none;
+	}
+
+
+/* specific divs */
+
+#banner
+img {
+	border-radius:3%;
+	margin-left:34%;
+	margin-top:1%
+}
+
+#block1{
+	background-color:#E5E7FF;
+	margin-left:37%;
+	margin-right:37%;
+	margin-top:.2%;
+	float:center;
+	padding-left:1%;
+	padding-right:1%;
+	padding-bottom:1.5%;
+	padding-top:.5%;
+	border-radius:2.5%;
+}
+ 
+.page-wrapper { 
+	background: url(http://csszengarden.com/001/zen-bg.jpg) no-repeat top left; 
+	padding: 0 175px 0 110px;  
+	margin: 0; 
+	position: relative;
+	}
+
+intro { 
+	min-width: 470px;
+	width: 100%;
+	}
+	
+header h1 { 
+	margin-top: 10px;
+	display: block;
+	width: 219px;
+	height: 87px;
+	float: center;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	}
+header h2 { 
+	background: transparent url(http://csszengarden.com/001/h2.gif) no-repeat top left; 
+	margin-top: 58px; 
+	margin-bottom: 40px; 
+	width: 200px; 
+	height: 18px; 
+	float: right;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	}
+header {
+	padding-top: 20px;
+	height: 87px;
+}
+
+.summary {
+	clear: both; 
+	margin: 20px 20px 20px 10px; 
+	width: 160px; 
+	float: left;
+	}
+.summary p {
+	font: italic 1.1em/2.2 georgia; 
+	text-align: center;
+	}
+
+restart {
+	clear: right; 
+	padding: 0px 10px 0 10px;
+	}
+add {	
+	padding-left: 10px; 
+	margin-bottom: 40px;
+	}
+
+footer { 
+	text-align: center; 
+	}
+footer a:link, footer a:visited { 
+	margin-right: 20px; 
+	}
+
+.sidebar {
+	margin-left: 600px; 
+	position: absolute; 
+	top: 0; 
+	right: 0;
+	}
+.sidebar .wrapper { 
+	font: 10px verdana, sans-serif; 
+	background: transparent url(http://csszengarden.com/001/paper-bg.jpg) top left repeat-y; 
+	padding: 10px; 
+	margin-top: 150px; 
+	width: 130px; 
+	}
+.sidebar h3.select { 
+	background: transparent url(http://csszengarden.com/001/h3.gif) no-repeat top left; 
+	margin: 10px 0 5px 0; 
+	width: 97px; 
+	height: 16px; 
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	}
+.sidebar h3.archives { 
+	background: transparent url(http://csszengarden.com/001/h5.gif) no-repeat top left; 
+	margin: 25px 0 5px 0; 
+	width:57px; 
+	height: 14px; 
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	}
+.sidebar h3.resources { 
+	background: transparent url(http://csszengarden.com/001/h6.gif) no-repeat top left; 
+	margin: 25px 0 5px 0; 
+	width:63px; 
+	height: 10px; 
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	}
+
+
+.sidebar ul {
+	margin: 0;
+	padding: 0;
+	}
+.sidebar li {
+	line-height: 1.3em; 
+	background: transparent url(http://csszengarden.com/001/cr1.gif) no-repeat top center; 
+	display: block; 
+	padding-top: 5px; 
+	margin-bottom: 5px;
+	list-style-type: none;
+	}
+.sidebar li a:link {
+	color: #988F5E;
+	}
+.sidebar li a:visited {
+	color: #B3AE94;
+	}
+
+
+.extra1 {
+	background: transparent url(http://csszengarden.com/001/cr2.gif) top left no-repeat; 
+	position: absolute; 
+	top: 40px; 
+	right: 0; 
+	width: 148px; 
+	height: 110px;
+	}
+
+/* Remove margins and padding from the list, and add a black background color */
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+/* Float the list items side by side */
+ul.topnav li {float: left;}
+
+/* Style the links inside the list items */
+ul.topnav li a {
+    display: inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of links on hover */
+ul.topnav li a:hover {background-color: #555;}
+
+/* Hide the list item that contains the link that should open and close the topnav on small screens */
+ul.topnav li.icon {display: none;}
+
+/* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("Home"). Show the list item that contains the link to open and close the topnav (li.icon) */
+@media screen and (max-width:680px) {
+  ul.topnav li:not(:first-child) {display: none;}
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens */
+@media screen and (max-width:680px) {
+  ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
+}
+
+/*#menu{
+  border-style: double;
+  text-align: center; font-family:"Open Sans", sans-serif, monospace;
+  font-size: 40px; color: black;  background-color: rgba(183, 183, 183, .5);
+    width: 450px;
+    border: 2px solid black;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+  float:center;
+}
+*/
+@font-face {
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Josefin Sans'), local('JosefinSans'), url(https://fonts.gstatic.com/s/josefinsans/v9/xgzbb53t8j-Mo-vYa23n5qRDOzjiPcYnFooOUGCOsRk.woff) format('woff');
+}
+
+#welcome{
+  /*border-style: double;*/
+  border-radius: 20px;
+  text-align: center; font-family:"Catamaran", sans-serif, monospace;
+  font-size: 20px; color: black;  background-color: rgba(53, 137, 183, .8);
+    width: 750px;
+    /*border: 2px solid black;*/
+    padding: 10px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+  float:center;
+}
+
+#instruc{
+  /*border-style: double;*/
+  border-radius: 20px;
+  text-align: center; font-family:"Catamaran", sans-serif, monospace;
+  font-size: 20px; color: black;  background-color: rgba(139, 141, 198, .8);
+    width: 600px;
+    /*border: 2px solid black;*/
+    padding: 10px;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+  float:center;
+}
+
+#logo{
+	margin-top: 20px;
+}

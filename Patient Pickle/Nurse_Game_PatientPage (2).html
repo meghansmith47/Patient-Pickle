@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<html style="background-color: #B7B7CA;">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="Nurse_Game.css">
+		<link rel="icon" type="image/gif" href="https://cdn0.iconfinder.com/data/icons/PRACTIKA/256/user.png" />
+		<script type="text/javascript" src="Nurse_Game_PatientPage_JS.js"></script>
+		<title>Patient</title>
+	</head>
+	<body>
+	<div ID="it">
+		<ul class="topnav" id="myTopnav">
+		  <li><a href="Nurse_Game_Homepage.html">Home</a></li>
+		  <li><a href="Nurse_Game_YourPatients.html">Your Patients</a></li>
+		  <li><a href="Nurse_Game_Notes.html">All Notes</a></li>
+		  <li><a href="Nurse_Game_Credits.html">Credits</a></li>
+		  <li class="icon">
+		    <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+		  </li>
+		</ul>
+		<br>
+		<!-- BUTTTON THAT GENERATES QUESTIONS -->
+		<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal1" onclick="generate_question();">Generate Question</button>
+		<div id="myModal1" class="modal fade" role="dialog">
+			<div class="modal-dialog">
+				<div class="modal-content" align= "center">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title"></h4>
+					</div>
+					<div id="blank" class="modal-body">
+						<p id="questions">N/A</p><br>
+						<!-- <p id="answer">No Question</p> -->
+						<!-- <p id="question">N/A</p><br>
+						<form id="form" onsubmit="return false;">
+							<input   style=position:auto; type="text" id="userInput"><br><br>
+							<input   style=position:auto; type="submit"    onclick="name();">
+						</form> -->
+					</div>
+					<div class="modal-footer">
+						<button id="A" title="incorrect" type="button" class="btn btn-default" onclick="correct_answer('A')">A</button>
+						<button id="B" title="incorrect" type="button" class="btn btn-default" onclick="correct_answer('B')">B</button>
+						<button id="C" title="incorrect" type="button" class="btn btn-default" onclick="correct_answer('C')">C</button>
+
+
+					</div>
+				</div>
+			</div>
+		</div>
+	
+
+		<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal2" onclick="Add_New('name_2','chart_2');">Patient Chart</button>
+		
+		<div id="myModal2" class="modal fade" role="dialog">
+			<div class="modal-dialog">
+				<div class="modal-content" align= "center">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title"></h4>
+					</div>
+					<div class="modal-body">
+						<p id= "name_2">N/A</p>
+						<p id= "chart_2">No Chart</p>
+					</div>
+					<div class="modal-footer">
+						<button id="2" type="button" class="btn btn-default" onclick="window.open('Nurse_Game_PatientPage.html')">Continue</button>
+						<button type="button" class="btn btn-default" onclick="Delete_Patient('name_2','chart_2')">Delete</button>
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+
+	<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal3" onclick="Add_New('name_3','chart_3');">Add Note</button>
+		<div id="myModal3" class="modal fade" role="dialog">
+			<div class="modal-dialog">
+				<div class="modal-content" align= "center">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title"></h4>
+					</div>
+					<div class="modal-body">
+						<iframe src="http://www.theburningmonk.com/demos/sticky_note_demo/sticky_note_demo.html" height="400" width="500"></iframe>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<br>
+		<br>
+		<img src="file:///C:/Users/Girls%20Who%20Code/Documents/HTML/Nursing%20Game/Images/aaaaaah.gif" id="Icon"/>
+		<script>
+			var icon = ["male_patient1.jpg", "male_patient2.jpg","female_patient1.jpg", "female_patient2.jpg", "female_patient3.jpg"];	
+			var image = document.getElementById("Icon");
+			image.src = icon[Math.floor((Math.random())*icon.length)];
+		</script>
+	</div>
+	</body>
+</html>
+
+
+
+
+
+
+
+
+

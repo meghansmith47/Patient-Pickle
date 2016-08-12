@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<!--Bootstrap Header Tags-->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+		<!--Page Header Tags-->
+		<link rel="stylesheet" href="Nurse_Game.css">
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+		<title>
+		Credits
+		</title>
+		<link rel="icon" type="image/gif" href="https://cdn0.iconfinder.com/data/icons/PRACTIKA/256/user.png" />
+		<script type="text/javascript" src="Nurse_Game_YourPatients_JS.js"></script>
+	</head>
+	<body>
+		<div ID="it">
+
+			<ul class="topnav" id="myTopnav">
+		  <li><a href="Nurse_Game_Homepage.html">Home</a></li>
+		  <li><a href="Nurse_Game_YourPatients.html">Your Patients</a></li>
+		  <li><a href="Nurse_Game_Notes.html">All Notes</a></li>
+		  <li><a href="Nurse_Game_Credits.html">Credits</a></li>
+		  <li class="icon">
+		    <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+		  </li>
+		</ul>
+
+			<h1 id="credits">Credits</h1>
+			<div ID="block1">
+				<div ID="block2"><br>
+					<h4><a href="http://www.luc.edu/nursing/about/faculty/laurarobbins-frankmsnrncccnsapn.shtml">Laura Robbins-Frank, MSN, RNC, CCNS/APN</a></h4>
+					<h4><a href="http://www.fda.gov/downloads/Drugs/DrugSafety/ucm088578.pdf">FDA: Coumadin (warfarin sodium)</a></h4>
+					<h4><a href="...">Dhamar Magdaleno; JavaScript and HTML coding, </a></h4>
+					<h4><a href="...">Caitrin Robbins; JavaScript and HTML coding, </a></h4>
+					<h4><a href="...">Meghan Smith; JavaScript and HTML coding, </a></h4>
+					<h4><a href="...">Steffany Villasenor; JavaScript and HTML coding, </a></h4>
+				</div>
+			</div>
+			<!-- <div ID="button1">
+				<ul class="nav nav-pills">
+					<li role="presentation" class="active"><a href="file:///C:/Users/Girls%20Who%20Code/Documents/HTML/gamepage.html">Home</a></li>
+				</ul>
+			</div> -->
+		</div>
+	</body>
+</html>

@@ -1,0 +1,346 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<link rel="stylesheet" href="Nurse_Game.css">
+		<link rel="icon" type="image/gif" href="https://cdn0.iconfinder.com/data/icons/PRACTIKA/256/user.png" />
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+		<!--<link href='<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>-->
+		<script type="text/javascript" src="Nurse_Game_YourPatients_JS.js"></script>
+		<title>
+		Your Patients
+		</title>
+	</head>
+
+
+
+	<body>
+		<div ID="it">
+		<!-- This is the nav bar -->
+		<ul class="topnav" id="myTopnav">
+		  <li><a href="Nurse_Game_Homepage.html">Home</a></li>
+		  <li><a href="Nurse_Game_YourPatients.html">Your Patients</a></li>
+		  <li><a href="Nurse_Game_Notes.html">All Notes</a></li>
+		  <li><a href="Nurse_Game_Credits.html">Credits</a></li>
+		  <li class="icon">
+		    <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+		  </li>
+		</ul>
+
+		<!-- <h2>
+		Your Patients:
+		</h2>
+		<button type="button" class="btn btn-info" onclick="clear_all();">Restart</button>
+		<a href="file:///Users/steffanyvillasenor/Desktop/asf/gs2_html_test.html" >Restart</a>
+		<p>
+		<a href="file:///C:/Users/Girls%20Who%20Code/Desktop/newpatientpage.html" target="_blank">Add New</a>
+		</p>
+		<p>
+		<a href="file:///C:/Users/Girls%20Who%20Code/Desktop/notes.html" target="_blank">See All Notes</a>
+		</p>
+		<p>
+		<a href="file:///C:/Users/Girls%20Who%20Code/Desktop/continue.html" target="_blank">Your Results</a>
+		</p> -->
+
+
+	<h2 id="yourpatients">Your Patients</h2><br>
+
+<!-- ..............STARTING FROM HERE PATIENT BUTTONS ARE MADE.............. -->
+	<ul>
+	<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal1" onclick="Add_New('name_1','chart_1');">Patient 1</button>
+		
+		<div id="myModal1" class="modal fade" role="dialog">
+			<div class="modal-dialog">
+				<div class="modal-content" align= "center">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title"></h4>
+					</div>
+					<div id="blank" class="modal-body">
+						<p id="name_1">N/A</p><br>
+						<p id="chart_1">No Chart</p>
+					</div>
+					<div class="modal-footer">
+						<button id="1" type="button" class="btn btn-default" onclick="openwindow('name_1')">Continue</button>
+						<button type="button" class="btn btn-default" onclick="Delete_Patient('name_1','chart_1')">Delete</button>
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal2" onclick="Add_New('name_2','chart_2');">Patient 2</button>
+		
+		<div id="myModal2" class="modal fade" role="dialog">
+			<div class="modal-dialog">
+				<div class="modal-content" align= "center">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title"></h4>
+					</div>
+					<div class="modal-body">
+						<p id= "name_2">N/A</p>
+						<p id= "chart_2">No Chart</p>
+					</div>
+					<div class="modal-footer">
+						<button id="2" type="button" class="btn btn-default" onclick="openwindow('name_2')">Continue</button>
+						<button type="button" class="btn btn-default" onclick="Delete_Patient('name_2','chart_2')">Delete</button>
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+	<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal3" onclick="Add_New('name_3','chart_3');">Patient 3</button>
+		<div id="myModal3" class="modal fade" role="dialog">
+			<div class="modal-dialog">
+				<div class="modal-content" align= "center">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title"></h4>
+					</div>
+					<div class="modal-body">
+						<p id="name_3">N/A</p><br>
+						<p id="chart_3">No Chart</p>
+					</div>
+					<div class="modal-footer">
+						<button id="3"type="button" class="btn btn-default" onclick="openwindow('name_3')">Continue</button>
+						<button type="button" class="btn btn-default" onclick="Delete_Patient('name_3','chart_3')">Delete</button>
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+
+
+	</ul>
+
+	<ul>
+	<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal4" onclick="Add_New('name_4','chart_4');">Patient 4</button>
+		
+		<div id="myModal4" class="modal fade" role="dialog">
+			<div class="modal-dialog">
+				<div class="modal-content" align= "center">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title"></h4>
+					</div>
+					<div id="blank" class="modal-body">
+						<p id="name_4">N/A</p><br>
+						<p id="chart_4">No Chart</p>
+					</div>
+					<div class="modal-footer">
+						<button id="4" type="button" class="btn btn-default" onclick="openwindow('name_4')">Continue</button>
+						<button type="button" class="btn btn-default" onclick="Delete_Patient('name_4','chart_4')">Delete</button>
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal5" onclick="Add_New('name_5','chart_5');">Patient 5</button>
+		
+		<div id="myModal5" class="modal fade" role="dialog">
+			<div class="modal-dialog">
+				<div class="modal-content" align= "center">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title"></h4>
+					</div>
+					<div class="modal-body">
+						<p id= "name_5">N/A</p>
+						<p id= "chart_5">No Chart</p>
+					</div>
+					<div class="modal-footer">
+						<button id="5" type="button" class="btn btn-default" onclick="openwindow('name_5')">Continue</button>
+						<button type="button" class="btn btn-default" onclick="Delete_Patient('name_5','chart_5')">Delete</button>
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+	<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal6" onclick="Add_New('name_6','chart_6');">Patient 6</button>
+		<div id="myModal6" class="modal fade" role="dialog">
+			<div class="modal-dialog">
+				<div class="modal-content" align= "center">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title"></h4>
+					</div>
+					<div class="modal-body">
+						<p id="name_6">N/A</p><br>
+						<p id="chart_6">No Chart</p>
+					</div>
+					<div class="modal-footer">
+						<button id="6"type="button" class="btn btn-default" onclick="openwindow('name_6')">Continue</button>
+						<button type="button" class="btn btn-default" onclick="Delete_Patient('name_6','chart_6')">Delete</button>
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+
+
+	</ul>
+
+	<ul>
+	<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal7" onclick="Add_New('name_7','chart_7');">Patient 7</button>
+		
+		<div id="myModal7" class="modal fade" role="dialog">
+			<div class="modal-dialog">
+				<div class="modal-content" align= "center">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h7 class="modal-title"></h7>
+					</div>
+					<div id="blank" class="modal-body">
+						<p id="name_7">N/A</p><br>
+						<p id="chart_7">No Chart</p>
+					</div>
+					<div class="modal-footer">
+						<button id="7" type="button" class="btn btn-default" onclick="openwindow('name_7')">Continue</button>
+						<button type="button" class="btn btn-default" onclick="Delete_Patient('name_7','chart_7')">Delete</button>
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal8" onclick="Add_New('name_8','chart_8');">Patient 8</button>
+		
+		<div id="myModal8" class="modal fade" role="dialog">
+			<div class="modal-dialog">
+				<div class="modal-content" align= "center">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title"></h4>
+					</div>
+					<div class="modal-body">
+						<p id= "name_8">N/A</p>
+						<p id= "chart_8">No Chart</p>
+					</div>
+					<div class="modal-footer">
+						<button id="8" type="button" class="btn btn-default" onclick="openwindow('name_8')">Continue</button>
+						<button type="button" class="btn btn-default" onclick="Delete_Patient('name_8','chart_8')">Delete</button>
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+	<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal9" onclick="Add_New('name_9','chart_9');">Patient 9</button>
+		<div id="myModal9" class="modal fade" role="dialog">
+			<div class="modal-dialog">
+				<div class="modal-content" align= "center">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title"></h4>
+					</div>
+					<div class="modal-body">
+						<p id="name_9">N/A</p><br>
+						<p id="chart_9">No Chart</p>
+					</div>
+					<div class="modal-footer">
+						<button id="9"type="button" class="btn btn-default" onclick="openwindow('name_9')">Continue</button>
+						<button type="button" class="btn btn-default" onclick="Delete_Patient('name_9','chart_9')">Delete</button>
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+
+
+	</ul>
+
+	<ul>
+	<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal10" onclick="Add_New('name_10','chart_10');">Patient 10</button>
+		
+		<div id="myModal10" class="modal fade" role="dialog">
+			<div class="modal-dialog">
+				<div class="modal-content" align= "center">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title"></h4>
+					</div>
+					<div id="blank" class="modal-body">
+						<p id="name_10">N/A</p><br>
+						<p id="chart_10">No Chart</p>
+					</div>
+					<div class="modal-footer">
+						<button id="10" type="button" class="btn btn-default" onclick="openwindow('name_10')">Continue</button>
+						<button type="button" class="btn btn-default" onclick="Delete_Patient('name_10','chart_10')">Delete</button>
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal11" onclick="Add_New('name_11','chart_11');">Patient 11</button>
+		
+		<div id="myModal11" class="modal fade" role="dialog">
+			<div class="modal-dialog">
+				<div class="modal-content" align= "center">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title"></h4>
+					</div>
+					<div class="modal-body">
+						<p id= "name_11">N/A</p>
+						<p id= "chart_11">No Chart</p>
+					</div>
+					<div class="modal-footer">
+						<button id="11" type="button" class="btn btn-default" onclick="openwindow('name_11')">Continue</button>
+						<button type="button" class="btn btn-default" onclick="Delete_Patient('name_11','chart_11')">Delete</button>
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+	<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal12" onclick="Add_New('name_12','chart_12');">Patient 12</button>
+		<div id="myModal12" class="modal fade" role="dialog">
+			<div class="modal-dialog">
+				<div class="modal-content" align= "center">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title"></h4>
+					</div>
+					<div class="modal-body">
+						<p id="name_12">N/A</p><br>
+						<p id="chart_12">No Chart</p>
+					</div>
+					<div class="modal-footer">
+						<button id="12"type="button" class="btn btn-default" onclick="openwindow('name_12')">Continue</button>
+						<button type="button" class="btn btn-default" onclick="Delete_Patient('name_12','chart_12')">Delete</button>
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+
+
+	</ul>
+
+<!-- ..............PATIENT BUTTONS END.............. -->
+
+</div>
+	</body>
+</html>

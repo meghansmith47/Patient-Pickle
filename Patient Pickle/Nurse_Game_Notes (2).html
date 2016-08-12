@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html style="background-color:rgba(139, 141, 198, .8);;">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="Nurse_Game.css">
+		<link rel="icon" type="image/gif" href="https://cdn0.iconfinder.com/data/icons/PRACTIKA/256/user.png" />
+		<link rel="stylesheet" href="Nurse_Game_Notes_CSS.css">
+		<script type="text/javascript" src="Nurse_Game_YourPatients_JS.js"></script>
+		<title>Patient</title>
+	</head>
+	<body>
+	<div ID="it">
+
+		<ul class="topnav" id="myTopnav">
+		  <li><a href="Nurse_Game_Homepage.html">Home</a></li>
+		  <li><a href="Nurse_Game_YourPatients.html">Your Patients</a></li>
+		  <li><a href="Nurse_Game_Notes.html">All Notes</a></li>
+		  <li><a href="Nurse_Game_Credits.html">Credits</a></li>
+		  <li class="icon">
+		    <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+		  </li>
+		</ul>
+
+		<h1 id="notes">Notes</h1>
+		<br>
+		<iframe id="sn" src="http://www.theburningmonk.com/demos/sticky_note_demo/sticky_note_demo.html" height="500"></iframe>
+	</div>
+	</body>
+</html>
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<link rel="stylesheet" href="Nurse_Game_Homepage_CSS.css">
+		<script src="gameplay.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="author" content="Caitrin Robbins">
+		<meta name="description" content="A medical learning game created by Steffany Villasenor, Meghan Smith, Dhamar Magdaleno, and Caitrin Robbins for the final project of the Girls Who Code Summer Immersion Programme at UIC 2016. CSS styling template credit to Timo Virtanen and Dave Shea through csszengarden.com">
+		<meta name="robots" content="all">
+		<title>Nursing Game</title>
+		<link rel="icon" type="image/gif" href="https://cdn0.iconfinder.com/data/icons/PRACTIKA/256/user.png" />
+		<script type="text/javascript" src="Nurse_Game_YourPatients_JS.js"></script>
+		<link href='https://fonts.googleapis.com/css?family=Catamaran|Josefin+Sans' rel='stylesheet' type='text/css'>
+	</head>
+	<body id="css-zen-garden" background="http://i.stack.imgur.com/gZ0MZ.png">
+
+		<ul class="topnav" id="myTopnav">
+		  <li><a href="Nurse_Game_Homepage.html">Home</a></li>
+		  <li><a href="Nurse_Game_YourPatients.html">Your Patients</a></li>
+		  <li><a href="Nurse_Game_Notes.html">All Notes</a></li>
+		  <li><a href="Nurse_Game_Credits.html">Credits</a></li>
+		  <li class="icon">
+		    <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+		  </li>
+		</ul>
+
+	
+		<!-- <section class="intro" id="intro"> -->
+			<div id="logo" align="middle">
+				<img id="logo" src="PatientPickle.jpg">	
+			</div>
+			<div id="docpic">
+				<img id="doc" src"heart.jpg">
+			</div>
+			<!-- <div class="preamble" id="zen-preamble" role="article">
+				<h2 id="menu">Menu</h2><br>
+			</div> -->
+		<!-- </section>	 -->
+		<!-- <div ID="block1">	
+			<div class="main supporting" id="zen-supporting" role="main">
+				<div class="benefits" id="add" role="article">
+					<h3><a href="file:///C:/Users/Girls%20Who%20Code/Documents/HTML/new2.html">Add New</a></h3>
+				</div>
+				<div class="benefits" id="continue" role="article">
+					<h3><a href="file:///C:/Users/Girls%20Who%20Code/Documents/HTML/new1.html">Continue</a></h3>
+				</div>
+				<div class="benefits" id="notes" role="article">
+					<h3><a href="file:///C:/Users/Girls%20Who%20Code/Documents/HTML/random_page.html">See All Notes</a></h3>
+				</div>
+				<div class="explanation" id="restart" role="article">
+					<h3 style="color:#BDB3C9;" onclick="clear()">Restart</h3>
+				</div>					  
+				<div class="benefits" id="credits" role="article">
+					<h3><a href="file:///C:/Users/Girls%20Who%20Code/Documents/HTML/credits_page.html">Credits</a></h3>
+				</div>
+			</div>	
+		</div> -->
+		<p id="welcome">
+			Welcome to our site!<br>
+	This game is designed to help those who are interested in the field of nursing learn the basics of patient care. Our goal in creating this game was to provide a less structured, more engaging way to study. 
+		</p>
+
+		<p id="instruc">
+			Instructions:<br>
+		To play, click Add New for a new patient, Continue to work with the same patient(s), or Restart to clear all scores and past patient information. View each patient's profile and determine the best course of action to take based off of the questions provided. Take notes as you go along, and refer to them while you play. Enjoy!
+		</p>
+	</body>
+	
+</html>
+
+
+
+
+
